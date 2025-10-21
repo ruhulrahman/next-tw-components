@@ -1,23 +1,53 @@
 {
-  "name": "next-tw-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@ruhulrahman/next-tw-components",
+  "version": "1.0.0",
+  "description": "A reusable form component library built with Next.js and Tailwind CSS for React projects.",
+  "author": "Ruhul Amin <your-email@example.com>",
+  "license": "MIT",
+  "homepage": "https://www.npmjs.com/~ruhulrahman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/bd-next-tw-components.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "rollup -c",
     "start": "next start"
   },
+  "keywords": [
+    "react",
+    "tailwind",
+    "nextjs",
+    "form",
+    "input",
+    "components",
+    "ui-library"
+  ],
   "dependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "next": "15.5.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.6"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "babel-preset-react": "^6.24.1",
+    "rollup": "^4.52.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
