@@ -3,8 +3,6 @@
 var React$1 = require('react');
 var fa = require('react-icons/fa');
 var ri = require('react-icons/ri');
-require('lucide-react');
-var tooltip = require('@/components/ui/tooltip');
 var ReactCrop = require('react-image-crop');
 require('react-image-crop/dist/ReactCrop.css');
 
@@ -892,16 +890,6 @@ const SwitchButton = ({
   }, error));
 };
 
-const SimpleTooltip = ({
-  icon,
-  text,
-  children
-}) => /*#__PURE__*/React.createElement(tooltip.TooltipProvider, {
-  delayDuration: 0
-}, /*#__PURE__*/React.createElement(tooltip.Tooltip, null, /*#__PURE__*/React.createElement(tooltip.TooltipTrigger, null, children || icon), /*#__PURE__*/React.createElement(tooltip.TooltipContent, {
-  className: "text-xs font-medium max-w-[300px] text-wrap"
-}, /*#__PURE__*/React.createElement("p", null, text))));
-
 const Avatar = ({
   text = "",
   value = "",
@@ -1310,5 +1298,4 @@ exports.Input = Input;
 exports.RadioButton = RadioButton;
 exports.RadioGroup = RadioGroup;
 exports.SelectSearch = SelectSearch;
-exports.SimpleTooltip = SimpleTooltip;
 exports.SwitchButton = SwitchButton;

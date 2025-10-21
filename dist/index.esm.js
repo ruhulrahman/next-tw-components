@@ -1,8 +1,6 @@
 import React$1, { useState, useEffect, useRef } from 'react';
 import { FaEyeSlash, FaEye } from 'react-icons/fa';
 import { RiCloseLine } from 'react-icons/ri';
-import 'lucide-react';
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip';
 import ReactCrop from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
 
@@ -890,16 +888,6 @@ const SwitchButton = ({
   }, error));
 };
 
-const SimpleTooltip = ({
-  icon,
-  text,
-  children
-}) => /*#__PURE__*/React.createElement(TooltipProvider, {
-  delayDuration: 0
-}, /*#__PURE__*/React.createElement(Tooltip, null, /*#__PURE__*/React.createElement(TooltipTrigger, null, children || icon), /*#__PURE__*/React.createElement(TooltipContent, {
-  className: "text-xs font-medium max-w-[300px] text-wrap"
-}, /*#__PURE__*/React.createElement("p", null, text))));
-
 const Avatar = ({
   text = "",
   value = "",
@@ -1300,4 +1288,4 @@ const ButtonTw = ({
   }, badge)));
 };
 
-export { Avatar, AvatarUpload, ButtonTw, Checkbox, Input, RadioButton, RadioGroup, SelectSearch, SimpleTooltip, SwitchButton };
+export { Avatar, AvatarUpload, ButtonTw, Checkbox, Input, RadioButton, RadioGroup, SelectSearch, SwitchButton };
