@@ -2,12 +2,12 @@
   "name": "@ruhulrahman/next-tw-components",
   "version": "1.0.0",
   "description": "A reusable form component library built with Next.js and Tailwind CSS for React projects.",
-  "author": "Ruhul Amin <your-email@example.com>",
+  "author": "Ruhul Amin <ruhulrahman2233@gmail.com>",
   "license": "MIT",
   "homepage": "https://www.npmjs.com/~ruhulrahman",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/bd-next-tw-components.git"
+    "url": "git+https://github.com/ruhulrahman/next-tw-components.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
