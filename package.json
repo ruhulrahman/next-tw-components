@@ -1,6 +1,6 @@
 {
   "name": "@ruhulrahman/next-tw-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A reusable form component library built with Next.js and Tailwind CSS for React projects.",
   "author": "Ruhul Amin <ruhulrahman2233@gmail.com>",
   "license": "MIT",
